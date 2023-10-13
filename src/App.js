@@ -131,6 +131,7 @@ function Todos({ complete, setComplete, tasksLength, setTasksLength }) {
     ])
     setNextId((id) => id + 1)
     setTasksLength(tasks.length)
+    document.body.querySelectorAll("input")[0].value = ""
   }
   const handleAddTaskText = (e) => {
     setText(e.target.value)
